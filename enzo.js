@@ -11,7 +11,8 @@ nightmare
         nome = document.querySelector('a.currency-name-container.link-secondary').innerText;
         moeda = document.querySelector('a.price').innerText;
         v = [nome,moeda];
-        return v;
+
+        return retorno;
       })
   .end()
   .then(result => { // ou (result) =>{
