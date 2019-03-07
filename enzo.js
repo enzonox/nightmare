@@ -7,10 +7,12 @@ nightmare
   //.click('a.price')
   //.wait('#r1-0 a.result__a')
   .evaluate(() => {
-        nome = document.querySelector('a').innerText;
+        
+        nome = document.querySelector('a.currency-name-container.link-secondary').innerText;
         moeda = document.querySelector('a.price').innerText;
-        vetor = [nome,moeda];
-          return vetor;
+        v = [nome,moeda];
+
+        return retorno;
       })
   .end()
   .then(result => { // ou (result) =>{
